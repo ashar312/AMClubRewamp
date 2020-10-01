@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AMClub</string>
+    <string-array name="gender">
+        <item>male</item>
+        <item>female</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="society">
+        <item>Sports Society</item>
+        <item>Entrepreneurial Society</item>
+        <item>Performing Arts Society</item>
+    </string-array>
 </resources>

@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
+import com.project.techaract.amclub.Form.Selector;
 
 public class MainActivity extends AppCompatActivity {
 
-    private int splashTmeout=3000;
+    private int splashTimeout=3000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-//                startActivity(new Intent(MainActivity.this, Login.class));
-//                finish();
+                startActivity(new Intent(MainActivity.this, Selector.class));
+                finish();
             }
-        }, splashTmeout);
+        }, splashTimeout);
     }
 }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "774988392446",
+    "firebase_url": "https://amclub-918c7.firebaseio.com",
+    "project_id": "amclub-918c7",
+    "storage_bucket": "amclub-918c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774988392446:android:48b74a1b338fb140c502af",
+        "android_client_info": {
+          "package_name": "com.project.techaract.amclub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774988392446-4v23e9lsg97pm07ml2cc2s3mn9vba1ra.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzR7GJFahdLmq06S5W3a0bYsBYwezFOPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774988392446-4v23e9lsg97pm07ml2cc2s3mn9vba1ra.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
