@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Sliders.SliderActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <androidx.viewpager.widget.ViewPager
+    <data>
+
+    </data>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_height="match_parent"
+        tools:context=".Sliders.SliderActivity">
 
-    <LinearLayout
-        android:layout_width="288dp"
-        android:layout_height="198dp"
-        android:orientation="horizontal"></LinearLayout>
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/sliderViewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-</RelativeLayout>
+        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+            android:id="@+id/spring_dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="@color/white"
+            app:dotsStrokeColor="@color/splashBg"
+            app:dotsCornerRadius="7dp"
+            app:dotsSize="14dp"
+            app:dotsSpacing="6dp"
+            app:stiffness="200"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skipBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Skip"
+            app:cornerRadius="20dp" />
+
+    </RelativeLayout>
+</layout>

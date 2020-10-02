@@ -10,4 +10,19 @@
         <item>Entrepreneurial Society</item>
         <item>Performing Arts Society</item>
     </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="slider1">And benefit from our unique affiliations that
+translate into a community which allows you to engage
+in the activities you have been seeking for
+a long time but did not have a platform for.</string>
+
+    <string name="slider2">We strive to motivate young sports enthusiasts and
+professionals towards leading a healthy and positive lifestyle
+while engaging them in multiple sports and community
+activities for their mental and physical nourishment.</string>
+
+    <string name="slider3">The Mission of Club AM is to build a robust
+and safe community around sports and fitness.</string>
+
 </resources>

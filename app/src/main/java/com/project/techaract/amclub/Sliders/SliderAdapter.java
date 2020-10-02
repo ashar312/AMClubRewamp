@@ -1,19 +1,40 @@
 package com.project.techaract.amclub.Sliders;
 
-import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.viewpager.widget.PagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-public class SliderAdapter extends PagerAdapter {
+import com.project.techaract.amclub.Sliders.fragments.Slider1Fragment;
+import com.project.techaract.amclub.Sliders.fragments.Slider2Fragment;
+import com.project.techaract.amclub.Sliders.fragments.Slider3Fragment;
 
+public class SliderAdapter extends FragmentStateAdapter {
+
+
+    public SliderAdapter(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
+    }
+
+    @NonNull
     @Override
-    public int getCount() {
-        return 0;
+    public Fragment createFragment(int position) {
+
+        switch (position){
+            case 0:
+                return new Slider1Fragment();
+            case 1:
+                return new Slider2Fragment();
+            case 2:
+                return new Slider3Fragment();
+        }
+        return null;
+
     }
 
     @Override
-    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return false;
+    public int getItemCount() {
+        return 3;
     }
 }

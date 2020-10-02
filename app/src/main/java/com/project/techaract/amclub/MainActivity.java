@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.widget.ImageView;
 import com.project.techaract.amclub.Form.Selector;
+import com.project.techaract.amclub.Sliders.SliderActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, Selector.class));
+                startActivity(new Intent(MainActivity.this, SliderActivity.class));
                 finish();
             }
         }, splashTimeout);
