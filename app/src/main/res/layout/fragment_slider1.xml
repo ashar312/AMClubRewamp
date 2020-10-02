@@ -5,8 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/slider1bg"
     tools:context=".Sliders.fragments.Slider1Fragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slider1bg"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
